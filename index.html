@@ -276,66 +276,79 @@ document.addEventListener('DOMContentLoaded', function () {
 </section>
 
 <!-- 花籃畫廊，默認隱藏 -->
+        <!-- 致贈花籃部分 -->
+<section id="donate-flower">
+    <h3><strong>致贈花籃，送上祝福</strong></h3>
+    <p><strong>選擇致贈花籃樣式，通過LINE與我們聯繫。</strong></p>
+
+    <!-- 訂購按鈕 -->
+    <a href="https://line.me/ti/p/TuM5y_Of6I" target="_blank" class="btn-order"><strong>加入 LINE 訂購</strong></a><br>
+
+    <!-- 顯示花籃樣式按鈕 -->
+    <a href="javascript:void(0);" id="show-flower-baskets" class="btn"><strong>顯示花籃樣式 🌹</strong></a>
+</section>
+
+<!-- 花籃畫廊，默認隱藏 -->
 <div id="flower-basket-gallery" style="display: none;">
     <div class="flower-basket-item">
         <a href="image/花籃A.JPG" data-lightbox="flower-baskets" data-title="A款NT$2,500/1對">
-            <img src="image/花籃A.JPG" alt="花籃A" loading="lazy" onclick="openOverlay(this.src)>
+            <img src="image/花籃A.JPG" alt="花籃A" loading="lazy" onclick="openOverlay(this.src)">
         </a>
         <p class="price"><strong>A款NT$2,500/對</strong></p>
     </div>
     <div class="flower-basket-item">
-            <a href="image/花籃B.JPG" data-lightbox="flower-baskets" data-title="B款NT$3,000/1對">
-                <img src="image/花籃B.JPG" alt="花籃B" loading="lazy" onclick="openOverlay(this.src)>
-            </a>
-            <p class="price"><strong>B款NT$3,000/對</strong></p>
-        </div>
-        <div class="flower-basket-item">
-            <a href="image/花籃C.JPG" data-lightbox="flower-baskets" data-title="C款NT$3,000/1對 ">
-                <img src="image/花籃C.JPG" alt="花籃C" loading="lazy" onclick="openOverlay(this.src)>
-            </a>
-            <p class="price"><strong>C款NT$3,500/對</strong></p>
-        </div>
-        <div class="flower-basket-item">
-            <a href="image/花籃D.JPG" data-lightbox="flower-baskets" data-title="D款NT$3,000/1對" >
-                <img src="image/花籃D.JPG" alt="花籃D" loading="lazy" onclick="openOverlay(this.src)>
-            </a>
-            <p class="price"><strong>D款NT$4,000/對</strong></p>
-        </div>
-        <div class="flower-basket-item">
-            <a href="image/花籃E.JPG" data-lightbox="flower-baskets" data-title="E款NT$3,000/1對">
-                <img src="image/花籃E.JPG" alt="花籃E" loading="lazy">
-            </a>
-            <p class="price"><strong>E款NT$5,000/對</strong></p>
-        </div>
-        <div class="flower-basket-item">
-            <a href="image/花籃F.JPG" data-lightbox="flower-baskets" data-title="F款NT$3,000/1對">
-                <img src="image/花籃F.JPG" alt="花籃F" loading="lazy" onclick="openOverlay(this.src)>
-            </a>
-            <p class="price"><strong>F款NT$5,500/對</strong></p>
-        </div>
-        <div class="flower-basket-item">
-            <a href="image/花籃G.JPG" data-lightbox="flower-baskets" data-title="G款NT$3,000/1對">
-                <img src="image/花籃G.JPG" alt="花籃G" loading="lazy" onclick="openOverlay(this.src)>
-            </a>
-            <p class="price"><strong>G款NT$6,000/對</strong></p>
-        </div>
-        <div class="flower-basket-item">
-            <a href="image/花籃H.JPG" data-lightbox="flower-baskets" data-title="H款NT$3,000/1對">
-                <img src="image/花籃H.JPG" alt="花籃H" loading="lazy" onclick="openOverlay(this.src)>
-            </a>
-            <p class="price"><strong>H款NT$6,500/對</strong></p>
-        </div>
-        <!-- 依此类推 -->
+        <a href="image/花籃B.JPG" data-lightbox="flower-baskets" data-title="B款NT$3,000/1對">
+            <img src="image/花籃B.JPG" alt="花籃B" loading="lazy" onclick="openOverlay(this.src)">
+        </a>
+        <p class="price"><strong>B款NT$3,000/對</strong></p>
     </div>
-        
- <!-- Overlay 元素，只需設置一次 -->
+    <div class="flower-basket-item">
+        <a href="image/花籃C.JPG" data-lightbox="flower-baskets" data-title="C款NT$3,500/1對">
+            <img src="image/花籃C.JPG" alt="花籃C" loading="lazy" onclick="openOverlay(this.src)">
+        </a>
+        <p class="price"><strong>C款NT$3,000/對</strong></p>
+    </div>
+    <div class="flower-basket-item">
+        <a href="image/花籃D.JPG" data-lightbox="flower-baskets" data-title="D款NT$4,000/1對">
+            <img src="image/花籃D.JPG" alt="花籃D" loading="lazy" onclick="openOverlay(this.src)">
+        </a>
+        <p class="price"><strong>D款NT$3,000/對</strong></p>
+    </div>
+    <div class="flower-basket-item">
+        <a href="image/花籃E.JPG" data-lightbox="flower-baskets" data-title="E款NT$5,000/1對">
+            <img src="image/花籃E.JPG" alt="花籃E" loading="lazy" onclick="openOverlay(this.src)">
+        </a>
+        <p class="price"><strong>E款NT$3,000/對</strong></p>
+    </div>
+    <div class="flower-basket-item">
+        <a href="image/花籃F.JPG" data-lightbox="flower-baskets" data-title="F款NT$5,500/1對">
+            <img src="image/花籃F.JPG" alt="花籃B" loading="lazy" onclick="openOverlay(this.src)">
+        </a>
+        <p class="price"><strong>F款NT$3,000/對</strong></p>
+    </div>
+    <div class="flower-basket-item">
+        <a href="image/花籃G.JPG" data-lightbox="flower-baskets" data-title="G款NT$6,000/1對">
+            <img src="image/花籃G.JPG" alt="花籃G" loading="lazy" onclick="openOverlay(this.src)">
+        </a>
+        <p class="price"><strong>B款NT$3,000/對</strong></p>
+    </div>
+    <div class="flower-basket-item">
+        <a href="image/花籃H.JPG" data-lightbox="flower-baskets" data-title="H款NT$6,500/1對">
+            <img src="image/花籃H.JPG" alt="花籃H" loading="lazy" onclick="openOverlay(this.src)">
+        </a>
+        <p class="price"><strong>B款NT$3,000/對</strong></p>
+    </div>
+    <!-- 其他花籃項目略 -->
+</div>
+
+<!-- Overlay 元素 -->
 <div id="overlay" class="overlay" onclick="closeOverlay()">
     <span class="close-btn" onclick="closeOverlay()">&times;</span>
     <img id="overlay-img" src="" alt="花籃放大圖">
 </div>
 
 <script>
-    // 控制显示和隐藏花籃画廊的功能
+    // 控制顯示和隱藏花籃畫廊的功能
     document.getElementById('show-flower-baskets').addEventListener('click', function() {
         var gallery = document.getElementById('flower-basket-gallery');
         if (gallery.style.display === 'none' || gallery.style.display === '') {
@@ -343,30 +356,33 @@ document.addEventListener('DOMContentLoaded', function () {
             this.innerHTML = '<strong>隱藏花籃樣式 🌹</strong>';
         } else {
             gallery.style.display = 'none';
-                    this.innerHTML = '<strong>顯示花籃樣式 🌹</strong>';
+            this.innerHTML = '<strong>顯示花籃樣式 🌹</strong>';
         }
+    });
 
-        function openOverlay(src) {
-    document.getElementById('overlay').style.display = 'flex';
-    document.getElementById('overlay-img').src = src;
-}
+    // 打開 overlay 並顯示放大圖片
+    function openOverlay(src) {
+        document.getElementById('overlay').style.display = 'flex';
+        document.getElementById('overlay-img').src = src;
+    }
 
-function closeOverlay() {
-    document.getElementById('overlay').style.display = 'none';
-}
+    // 關閉 overlay
+    function closeOverlay() {
+        document.getElementById('overlay').style.display = 'none';
+    }
 </script>
 
 <style>
-    /* 致贈花籃部分样式 */
+    /* 致贈花籃部分樣式 */
     #donate-flower {
         text-align: center;
         margin: 20px auto;
         max-width: 500px;
         padding: 20px;
-        border: 2px solid #0066cc; /* 深蓝色边框 */
-        border-radius: 10px; /* 圆角 */
-        background-color: #f0f8ff; /* 淡蓝色背景 */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 阴影 */
+        border: 2px solid #0066cc;
+        border-radius: 10px;
+        background-color: #f0f8ff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     #donate-flower h3 {
@@ -381,22 +397,22 @@ function closeOverlay() {
         margin-bottom: 20px;
     }
 
-    /* 顯示花籃樣式按钮样式 */
+    /* 按鈕樣式 */
     .btn {
         display: inline-block;
         padding: 10px 20px;
         font-size: 16px;
         color: #fff;
-        background-color: #0066cc; /* 蓝色背景 */
+        background-color: #0066cc;
         text-decoration: none;
         border-radius: 5px;
     }
 
     .btn:hover {
-        background-color: #004d99; /* 鼠标悬停时的颜色变化 */
+        background-color: #004d99;
     }
 
-    /* 花籃画廊样式 */
+    /* 花籃畫廊樣式 */
     #flower-basket-gallery {
         display: flex;
         flex-wrap: wrap;
@@ -406,15 +422,15 @@ function closeOverlay() {
     }
 
     .flower-basket-item {
-        max-width: 200px; /* 控制花籃圖片最大寬度 */
+        max-width: 200px;
         text-align: center;
     }
 
     .flower-basket-item img {
         width: 100%;
-        height: auto; /* 保持圖片比例 */
-        border: 2px solid #ccc; /* 圖片边框 */
-        border-radius: 5px; /* 圖片圓角 */
+        height: auto;
+        border: 2px solid #ccc;
+        border-radius: 5px;
     }
 
     .price {
@@ -423,39 +439,33 @@ function closeOverlay() {
         color: #333;
     }
 
-    img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-     /* 花籃画廊样式 */
-    #flower-basket-gallery {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
+    /* overlay 樣式 */
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
         justify-content: center;
-        margin-top: 20px;
+        align-items: center;
     }
 
-    .flower-basket-item {
-        max-width: 200px; /* 控制花籃圖片最大寬度 */
-        text-align: center;
+    .overlay img {
+        max-width: 90%;
+        max-height: 90%;
+        border-radius: 5px;
     }
 
-    .flower-basket-item img {
-        width: 100%;
-        height: auto; /* 保持圖片比例 */
-        border: 2px solid #ccc; /* 圖片边框 */
-        border-radius: 5px; /* 圖片圓角 */
+    .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 30px;
+        color: #fff;
+        cursor: pointer;
     }
-
-    .price {
-        margin-top: 10px;
-        font-size: 18px;
-        color: #333;
-    }
-}
 </style>
         
         <!-- 固定聯絡方式 -->
