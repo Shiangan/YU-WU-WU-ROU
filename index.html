@@ -471,6 +471,87 @@ document.addEventListener('DOMContentLoaded', function () {
     opacity: 0.8; /* 鼠标悬停效果 */
 }</style>
 
+                      <!-- 固定聯絡方式 -->
+        <div id="fixed-links">
+            <a href="tel:0938-179-858" class="bold">
+                <img src="image/24小時專線.png" alt="24小時服務電話" style="width: 70px; height: 30px;">
+            </a>
+            <a href="https://line.me/ti/p/TuM5y_Of6I" target="_blank" class="bold">
+                <img src="image/Iine-icon.png.png" alt="LINE 聯絡我們" style="width: 50px; height: 50px;" loading="lazy">
+            </a>
+        </div>
+
+        <style>
+        #fixed-links {
+    position: fixed; /* 固定在页面上 */
+    bottom: 10px; /* 距离底部10px */
+    right: 10px; /* 距离右侧10px */
+    display: flex; /* 使用flex布局 */
+    gap: 10px; /* 每个项之间的间距 */
+    align-items: center; /* 垂直居中对齐 */
+    z-index: 1000; /* 确保在页面内容之上 */
+}
+
+#fixed-links a {
+    display: block; /* 链接块级显示 */
+}
+
+#fixed-links img {
+    display: block; /* 图片块级显示 */
+    width: auto; /* 根据实际图片宽高比例调整 */
+    height: auto; /* 根据实际图片宽高比例调整 */
+    max-width: 70px; /* 最大宽度 */
+    max-height: 50px; /* 最大高度 */
+    border: none; /* 去掉图片的边框 */
+    border-radius: 5px; /* 圆角 */
+}
+            </style>
+        
+
+        <!-- 名片及分享按钮部分 -->
+        <section id="business-card">
+            <img src="image/未命名設計.png" alt="名片" class="business-card-img">
+            <div id="share-buttons">
+
+    <!-- 分享按钮 -->
+        <section id="share-buttons">
+            <p><strong>分享此頁面</strong></p>
+            <div class="share-btns">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://shiangan.github.io/YU-WU-WU-ROU/" target="_blank" class="share-btn fb-share-btn" aria-label="Share on Facebook">
+                    <img src="image/fb.png" alt="Share on Facebook">
+                </a>
+                <a href="https://line.me/R/msg/text/?https://shiangan.github.io/YU-WU-WU-ROU/" target="_blank" class="share-btn line-share-btn" aria-label="Share on Line">
+                    <img src="image/line.png" alt="Share on Line">
+                </a>
+            </div>
+        </section>
+    </main>
+
+                <style>
+#share-buttons {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.share-btns {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.share-btn {
+    display: inline-block;
+}
+
+.fb-share-btn img, .line-share-btn img {
+    width: 40px; /* 设定适当的图标大小 */
+    height: auto;
+}
+
+.fb-share-btn:hover img, .line-share-btn:hover img {
+    opacity: 0.8; /* 鼠标悬停效果 */
+}</style>
+
      <div style="padding: 20px; background-color: #f9f9f9; border-radius: 10px; margin-top: 20px;">
     <h2 style="font-family: '辰魚落雁體'; color: #333; text-align: center;">新北市立殯儀館</h2>
     <p style="font-size: 16px; font-family: 'Arial', sans-serif; color: #666; text-align: center;">
