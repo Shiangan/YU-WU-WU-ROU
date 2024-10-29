@@ -176,7 +176,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <div class="remembrance-item">
             <h3><strong>豎靈地點</strong></h3>
             <p><strong> 龍華會館 </strong></p>
-             <p><strong> 牌位區1F ［ 73 ］號 </strong></p>
+             <p><strong> 新北市板橋區長江路一段7號 </strong></p>
             <p><strong><a href="https://maps.app.goo.gl/c6NRvwgt4ZCxT2Hm8">地址：220新北市板橋區中正路560號</a></strong></p>
         </div>
         <div class="remembrance-item">
@@ -267,7 +267,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 <!-- 花籃畫廊，默認隱藏 -->
-        <!-- 致贈花籃部分 -->
+<!-- 致贈花籃部分 -->
 <section id="donate-flower">
     <h3><strong>致贈花籃，送上祝福</strong></h3>
     <p><strong>選擇致贈花籃樣式，通過LINE與我們聯繫。</strong></p>
@@ -297,44 +297,44 @@ document.addEventListener('DOMContentLoaded', function () {
         <a href="image/花籃C.JPG" data-lightbox="flower-baskets" data-title="C款NT$3,500/1對">
             <img src="image/花籃C.JPG" alt="花籃C" loading="lazy" onclick="openOverlay(this.src)">
         </a>
-        <p class="price"><strong>C款NT$3,000/對</strong></p>
+        <p class="price"><strong>C款NT$3,500/對</strong></p>
     </div>
     <div class="flower-basket-item">
         <a href="image/花籃D.JPG" data-lightbox="flower-baskets" data-title="D款NT$4,000/1對">
             <img src="image/花籃D.JPG" alt="花籃D" loading="lazy" onclick="openOverlay(this.src)">
         </a>
-        <p class="price"><strong>D款NT$3,000/對</strong></p>
+        <p class="price"><strong>D款NT$4,000/對</strong></p>
     </div>
     <div class="flower-basket-item">
         <a href="image/花籃E.JPG" data-lightbox="flower-baskets" data-title="E款NT$5,000/1對">
             <img src="image/花籃E.JPG" alt="花籃E" loading="lazy" onclick="openOverlay(this.src)">
         </a>
-        <p class="price"><strong>E款NT$3,000/對</strong></p>
+        <p class="price"><strong>E款NT$5,000/對</strong></p>
     </div>
     <div class="flower-basket-item">
         <a href="image/花籃F.JPG" data-lightbox="flower-baskets" data-title="F款NT$5,500/1對">
-            <img src="image/花籃F.JPG" alt="花籃B" loading="lazy" onclick="openOverlay(this.src)">
+            <img src="image/花籃F.JPG" alt="花籃F" loading="lazy" onclick="openOverlay(this.src)">
         </a>
-        <p class="price"><strong>F款NT$3,000/對</strong></p>
+        <p class="price"><strong>F款NT$5,500/對</strong></p>
     </div>
     <div class="flower-basket-item">
         <a href="image/花籃G.JPG" data-lightbox="flower-baskets" data-title="G款NT$6,000/1對">
             <img src="image/花籃G.JPG" alt="花籃G" loading="lazy" onclick="openOverlay(this.src)">
         </a>
-        <p class="price"><strong>B款NT$3,000/對</strong></p>
+        <p class="price"><strong>G款NT$6,000/對</strong></p>
     </div>
     <div class="flower-basket-item">
         <a href="image/花籃H.JPG" data-lightbox="flower-baskets" data-title="H款NT$6,500/1對">
             <img src="image/花籃H.JPG" alt="花籃H" loading="lazy" onclick="openOverlay(this.src)">
         </a>
-        <p class="price"><strong>B款NT$3,000/對</strong></p>
+        <p class="price"><strong>H款NT$6,500/對</strong></p>
     </div>
     <!-- 其他花籃項目略 -->
 </div>
 
 <!-- Overlay 元素 -->
 <div id="overlay" class="overlay" onclick="closeOverlay()">
-    <span class="close-btn" onclick="closeOverlay()">&times;</span>
+    <span class="close-btn" onclick="closeOverlay(event)">&times;</span>
     <img id="overlay-img" src="" alt="花籃放大圖">
 </div>
 
@@ -358,7 +358,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // 關閉 overlay
-    function closeOverlay() {
+    function closeOverlay(event) {
+        event.stopPropagation(); // 防止關閉事件的冒泡
         document.getElementById('overlay').style.display = 'none';
     }
 </script>
@@ -457,43 +458,42 @@ document.addEventListener('DOMContentLoaded', function () {
         color: #fff;
         cursor: pointer;
     }
+
+    /* 固定聯絡方式樣式 */
+    #fixed-links {
+        position: fixed; /* 固定在页面上 */
+        bottom: 10px; /* 距离底部10px */
+        right: 10px; /* 距离右侧10px */
+        display: flex; /* 使用flex布局 */
+        gap: 10px; /* 每个项之间的间距 */
+        align-items: center; /* 垂直居中对齐 */
+        z-index: 1000; /* 确保在页面内容之上 */
+    }
+
+    #fixed-links a {
+        display: block; /* 链接块级显示 */
+    }
+
+    #fixed-links img {
+        display: block; /* 图片块级显示 */
+        width: auto; /* 根据实际图片宽高比例调整 */
+        height: auto; /* 根据实际图片宽高比例调整 */
+        max-width: 70px; /* 最大宽度 */
+        max-height: 50px; /* 最大高度 */
+        border: none; /* 去掉图片的边框 */
+        border-radius: 5px; /* 圆角 */
+    }
 </style>
-        
-        <!-- 固定聯絡方式 -->
-        <div id="fixed-links">
-            <a href="tel:0938-179-858" class="bold">
-                <img src="image/24小時專線.png" alt="24小時服務電話" style="width: 70px; height: 30px;">
-            </a>
-            <a href="https://line.me/ti/p/TuM5y_Of6I" target="_blank" class="bold">
-                <img src="image/Iine-icon.png.png" alt="LINE 聯絡我們" style="width: 50px; height: 50px;" loading="lazy">
-            </a>
-        </div>
 
-        <style>
-        #fixed-links {
-    position: fixed; /* 固定在页面上 */
-    bottom: 10px; /* 距离底部10px */
-    right: 10px; /* 距离右侧10px */
-    display: flex; /* 使用flex布局 */
-    gap: 10px; /* 每个项之间的间距 */
-    align-items: center; /* 垂直居中对齐 */
-    z-index: 1000; /* 确保在页面内容之上 */
-}
-
-#fixed-links a {
-    display: block; /* 链接块级显示 */
-}
-
-#fixed-links img {
-    display: block; /* 图片块级显示 */
-    width: auto; /* 根据实际图片宽高比例调整 */
-    height: auto; /* 根据实际图片宽高比例调整 */
-    max-width: 70px; /* 最大宽度 */
-    max-height: 50px; /* 最大高度 */
-    border: none; /* 去掉图片的边框 */
-    border-radius: 5px; /* 圆角 */
-}
-            </style>
+<!-- 固定聯絡方式 -->
+<div id="fixed-links">
+    <a href="tel:0938-179-858" class="bold">
+        <img src="image/24小時專線.png" alt="24小時服務電話">
+    </a>
+    <a href="https://line.me/ti/p/TuM5y_Of6I" target="_blank" class="bold">
+        <img src="image/Iine-icon.png" alt="LINE 聯絡我們" loading="lazy">
+    </a>
+</div>
         
 
         <!-- 名片及分享按钮部分 -->
