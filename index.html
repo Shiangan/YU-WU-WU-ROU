@@ -417,27 +417,41 @@ document.addEventListener('DOMContentLoaded', function () {
 </style>
 
 <!-- 固定聯絡方式 -->
-<div id="fixed-links">
-    <a href="tel:0938-179-858" class="bold">
-        <img src="image/24小時專線.png" alt="24小時服務電話">
-    </a>
-    <a href="https://line.me/ti/p/TuM5y_Of6I" target="_blank" class="bold">
-        <img src="image/Iine-icon.png.png" alt="LINE 聯絡我們" loading="lazy">
-    </a>
-</div>
+        <div id="fixed-links">
+            <a href="tel:0938-179-858" class="bold">
+                <img src="image/24小時專線.png" alt="24小時服務電話" style="width: 70px; height: 30px;">
+            </a>
+            <a href="https://line.me/ti/p/TuM5y_Of6I" target="_blank" class="bold">
+                <img src="image/Iine-icon.png.png" alt="LINE 聯絡我們" style="width: 50px; height: 50px;" loading="lazy">
+            </a>
+        </div>
+
+        <style>
+        #fixed-links {
+    position: fixed; /* 固定在页面上 */
+    bottom: 10px; /* 距离底部10px */
+    right: 10px; /* 距离右侧10px */
+    display: flex; /* 使用flex布局 */
+    gap: 10px; /* 每个项之间的间距 */
+    align-items: center; /* 垂直居中对齐 */
+    z-index: 1000; /* 确保在页面内容之上 */
+}
+
+#fixed-links a {
+    display: block; /* 链接块级显示 */
+}
+
+#fixed-links img {
+    display: block; /* 图片块级显示 */
+    width: auto; /* 根据实际图片宽高比例调整 */
+    height: auto; /* 根据实际图片宽高比例调整 */
+    max-width: 70px; /* 最大宽度 */
+    max-height: 50px; /* 最大高度 */
+    border: none; /* 去掉图片的边框 */
+    border-radius: 5px; /* 圆角 */
+}
+            </style>
         
-
-                <style>
-#share-buttons {
-    text-align: center;
-    margin: 20px auto;
-}
-
-.share-btns {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
 
 .share-btn {
     display: inline-block;
