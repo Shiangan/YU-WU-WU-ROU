@@ -132,21 +132,25 @@ header h1 {
 /* 响应式设计 */
 @media (min-width: 600px) {
     .remembrance-details {
-        flex-direction: row; /* 在中等屏幕上横向排列 */
+        flex-direction: row;
         flex-wrap: wrap;
         gap: 20px;
     }
     
     .remembrance-item {
-        flex: 1 1 calc(50% - 40px); /* 在中等屏幕上每行两列 */
+        flex: 1 1 calc(50% - 40px); /* 在中等屏幕上每行兩列 */
         max-width: calc(50% - 40px);
     }
 }
 
 @media (min-width: 900px) {
+    .remembrance-details {
+        justify-content: flex-start; /* 保持所有元素在左側對齊 */
+    }
+    
     .remembrance-item {
-        flex: 1 1 calc(33% - 40px); /* 在大屏幕上每行三列 */
-        max-width: calc(33% - 40px);
+        flex: 1 1 calc(33.33% - 40px); /* 在大屏幕上每行三列 */
+        max-width: calc(33.33% - 40px);
     }
 }
 
